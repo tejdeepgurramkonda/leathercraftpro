@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- xml/preferences.xml -->
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="Design Settings">
+        <SwitchPreferenceCompat
+            app:key="auto_save"
+            app:title="Auto Save"
+            app:summary="Automatically save designs every 5 minutes"
+            app:defaultValue="true" />
+
+        <ListPreference
+            app:key="default_canvas_color"
+            app:title="Default Canvas Color"
+            app:summary="Choose background color for new designs"
+            app:entries="@array/canvas_color_entries"
+            app:entryValues="@array/canvas_color_values"
+            app:defaultValue="leather_tan" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

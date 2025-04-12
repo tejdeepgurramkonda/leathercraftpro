@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.leathercraftpro">
+
+    <application
+        android:allowBackup="true"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- Splash Screen Activity -->
+        <activity
+            android:name="SplashScreenActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Main Activity -->
+        <activity
+            android:name="MainActivity"
+            android:exported="true">
+        </activity>
+
+        <!-- Other Activities with explicit parent and exported status -->
+        <activity
+            android:name="DesignActivity"
+            android:parentActivityName="com.example.leathercraftpro.MainActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="TaskManagementActivity"
+            android:parentActivityName="com.example.leathercraftpro.MainActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="SettingsActivity"
+            android:parentActivityName="com.example.leathercraftpro.MainActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="ProfileActivity"
+            android:parentActivityName="com.example.leathercraftpro.MainActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>

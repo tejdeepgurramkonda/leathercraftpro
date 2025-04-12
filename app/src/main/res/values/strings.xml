@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?><!-- values/strings.xml -->
+<resources>
+    <string name="app_name">LeatherCraft Pro</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string-array name="canvas_color_entries">
+        <item>Leather Tan</item>
+        <item>Light Brown</item>
+        <item>Dark Brown</item>
+        <item>Black</item>
+        <item>White</item>
+    </string-array>
+
+    <string-array name="canvas_color_values">
+        <item>leather_tan</item>
+        <item>light_brown</item>
+        <item>dark_brown</item>
+        <item>black</item>
+        <item>white</item>
+    </string-array>
+</resources>
