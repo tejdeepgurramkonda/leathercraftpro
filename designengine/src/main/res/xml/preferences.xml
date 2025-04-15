@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory android:title="General Settings">
+        <SwitchPreferenceCompat
+            android:key="auto_save"
+            android:title="Auto Save"
+            android:summary="Automatically save projects while working"
+            android:defaultValue="true" />
+
+        <ListPreference
+            android:key="default_units"
+            android:title="Default Units"
+            android:summary="Set default measurement units"
+            android:entries="@array/units_entries"
+            android:entryValues="@array/units_values"
+            android:defaultValue="cm" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Canvas Settings">
+        <SwitchPreferenceCompat
+            android:key="show_grid"
+            android:title="Show Grid"
+            android:summary="Show grid on canvas"
+            android:defaultValue="true" />
+
+        <SeekBarPreference
+            android:key="grid_size"
+            android:title="Grid Size"
+            android:summary="Set grid size"
+            android:defaultValue="20"
+            android:max="50" />
+
+        <ListPreference
+            android:key="default_tool"
+            android:title="Default Tool"
+            android:summary="Set default drawing tool"
+            android:entries="@array/tools_entries"
+            android:entryValues="@array/tools_values"
+            android:defaultValue="freehand" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Export Settings">
+        <ListPreference
+            android:key="default_export_format"
+            android:title="Default Export Format"
+            android:summary="Set default export format"
+            android:entries="@array/export_format_entries"
+            android:entryValues="@array/export_format_values"
+            android:defaultValue="svg" />
+
+        <SeekBarPreference
+            android:key="export_quality"
+            android:title="Export Quality"
+            android:summary="Set export quality for images"
+            android:defaultValue="90"
+            android:max="100" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

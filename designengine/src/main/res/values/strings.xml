@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Leather Design Backend</string>
+    <string name="search_hint">Search tools...</string>
+    <string name="project_notes">Project Notes</string>
+    <string name="add_note">Add Note</string>
+    <string name="note_title_hint">Note Title</string>
+    <string name="note_content_hint">Enter your note here...</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+    <string name="date_added">Date Added: %1$s</string>
+    <string name="note_added">Note added successfully</string>
+    <string name="note_updated">Note updated successfully</string>
+    <string name="note_deleted">Note deleted</string>
+    <!-- Note Dialog Strings -->
+    <string name="note_title">Title</string>
+    <string name="note_category">Category</string>
+    <string name="note_content">Content</string>
+    <string name="note_attachment">Attachment</string>
+    <string name="select_image">Select Image</string>
+    <string name="image_preview">Image Preview</string>
+    <string name="remove_image">Remove Image</string>
+    <!-- 3D Preview Strings -->
+    <string name="show_instructions">Show Instructions</string>
+    <string name="hide_instructions">Hide Instructions</string>
+</resources>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Units arrays -->
+    <string-array name="units_entries">
+        <item>Centimeters (cm)</item>
+        <item>Inches (in)</item>
+        <item>Millimeters (mm)</item>
+    </string-array>
+    
+    <string-array name="units_values">
+        <item>cm</item>
+        <item>in</item>
+        <item>mm</item>
+    </string-array>
+    
+    <!-- Tools arrays -->
+    <string-array name="tools_entries">
+        <item>Freehand</item>
+        <item>Line</item>
+        <item>Rectangle</item>
+        <item>Circle</item>
+    </string-array>
+    
+    <string-array name="tools_values">
+        <item>freehand</item>
+        <item>line</item>
+        <item>rectangle</item>
+        <item>circle</item>
+    </string-array>
+    
+    <!-- Export format arrays -->
+    <string-array name="export_format_entries">
+        <item>PDF</item>
+        <item>SVG</item>
+        <item>PNG</item>
+        <item>JPEG</item>
+    </string-array>
+
+    <string-array name="export_format_values">
+        <item>pdf</item>
+        <item>svg</item>
+        <item>png</item>
+        <item>jpeg</item>
+    </string-array>
+</resources>

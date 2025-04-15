@@ -20,6 +20,9 @@ import androidx.drawerlayout.widget.DrawerLayout
 import android.widget.FrameLayout
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.navigation.NavigationView
+import com.example.leatherdesignbackend.ui.activities.MainActivity as MainAppActivity
+import com.example.leatherdesignbackend.ui.activities.DesignCanvasActivity
+
 
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
@@ -60,7 +63,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                     true
                 }
                 R.id.nav_design -> {
-                    startActivity(Intent(this, DesignActivity::class.java))
+                    startActivity(Intent(this,   com.example.leatherdesignbackend.ui.activities.MainActivity::class.java))
                     true
                 }
                 R.id.nav_tasks -> {
@@ -94,14 +97,14 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                 DashboardScreen(
                     onRecentDesignClick = { recentDesign ->
                         // Navigate to Design Activity with the design ID
-                        val intent = Intent(this@MainActivity, DesignActivity::class.java).apply {
+                        val intent = Intent(this@MainActivity, com.example.leatherdesignbackend.ui.activities.DesignCanvasActivity::class.java).apply {
                             putExtra("DESIGN_ID", recentDesign.id)
                         }
                         startActivity(intent)
                     },
                     onCategoryClick = { category ->
                         // Navigate to category specific view or filter
-                        val intent = Intent(this@MainActivity, DesignActivity::class.java).apply {
+                        val intent = Intent(this@MainActivity, com.example.leatherdesignbackend.ui.activities.DesignCanvasActivity::class.java).apply {
                             putExtra("CATEGORY_ID", category.id)
                         }
                         startActivity(intent)
@@ -120,7 +123,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                 // We're already at home
             }
             R.id.nav_design -> {
-                startActivity(Intent(this, DesignActivity::class.java))
+                startActivity(Intent(this, com.example.leatherdesignbackend.ui.activities.DesignCanvasActivity::class.java))
             }
             R.id.nav_tasks -> {
                 startActivity(Intent(this, TaskManagementActivity::class.java))

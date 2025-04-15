@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    
+    <item
+        android:id="@+id/action_reset_view"
+        android:title="Reset View"
+        android:icon="@android:drawable/ic_menu_revert"
+        app:showAsAction="ifRoom" />
+    
+    <item
+        android:id="@+id/action_share"
+        android:title="Share"
+        android:icon="@android:drawable/ic_menu_share"
+        app:showAsAction="ifRoom" />
+    
+    <item
+        android:id="@+id/action_next_step"
+        android:title="Export Design"
+        android:icon="@android:drawable/ic_menu_send"
+        app:showAsAction="ifRoom" />
+    
+</menu> 

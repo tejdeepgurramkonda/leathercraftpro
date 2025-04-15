@@ -21,4 +21,6 @@ dependencyResolutionManagement {
 
 rootProject.name = "leathercraftpro"
 include(":app")
+include(":designengine")
+
  
