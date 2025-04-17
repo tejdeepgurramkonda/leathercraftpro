@@ -12,6 +12,7 @@
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:tag="coordinator_layout_root"
         tools:context=".ui.activities.MainActivity">
 
         <com.google.android.material.appbar.AppBarLayout
